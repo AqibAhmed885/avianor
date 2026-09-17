@@ -1,0 +1,7 @@
+<!-- PLACEHOLDER: White standalone "A" symbol for dark backgrounds. Replace with real asset. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" fill="none" role="img" aria-label="Avianor Engineering">
+  <title>Avianor Engineering mark</title>
+  <rect x="2" y="2" width="40" height="40" rx="8" fill="rgba(255,255,255,0.15)"/>
+  <text x="22" y="29" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="white" text-anchor="middle">A</text>
+</svg>
+

@@ -1,0 +1,9 @@
+<!-- PLACEHOLDER: White version of the full logo for dark backgrounds. Replace with real asset. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 44" fill="none" role="img" aria-label="Avianor Engineering logo">
+  <title>Avianor Engineering</title>
+  <rect x="2" y="2" width="40" height="40" rx="8" fill="rgba(255,255,255,0.15)"/>
+  <text x="22" y="27" font-family="system-ui, sans-serif" font-size="18" font-weight="800" fill="white" text-anchor="middle">A</text>
+  <text x="52" y="20" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="white" letter-spacing="2">AVIANOR</text>
+  <text x="52" y="34" font-family="system-ui, sans-serif" font-size="8" font-weight="500" fill="rgba(255,255,255,0.7)" letter-spacing="1">ENGINEERING</text>
+</svg>
+
