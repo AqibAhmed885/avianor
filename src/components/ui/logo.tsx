@@ -7,7 +7,6 @@ type LogoVariant = "full" | "mark" | "wordmark";
 interface LogoProps {
   variant?: LogoVariant;
   className?: string;
-  /** When true renders as a plain image, not a link */
   asImage?: boolean;
   inverted?: boolean;
 }
@@ -44,14 +43,6 @@ function LogoImage({
   inverted: boolean;
   className?: string;
 }) {
-  // NOTE: Replace these placeholder SVG paths with your real logo files.
-  // Expected files in public/brand/:
-  //   logo-full.svg          — full lockup (mark + wordmark)
-  //   logo-full-white.svg    — white version for dark backgrounds
-  //   logo-mark.svg          — standalone "A" symbol
-  //   logo-mark-white.svg    — white "A" symbol
-  //   logo-wordmark.svg      — AVIANOR wordmark only
-  //   logo-wordmark-white.svg— white wordmark
 
   if (variant === "mark") {
     return (
