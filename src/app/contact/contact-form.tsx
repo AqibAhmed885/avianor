@@ -1,6 +1,6 @@
 "use client";
 
-import { useActionState } from "react";
+import { useFormState, useFormStatus } from "react-dom";
 import { CheckCircle, AlertCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -44,8 +44,24 @@ const timeframeOptions = [
 
 const initialState: ContactFormState = { status: "idle" };
 
+function SubmitButton() {
+  const { pending } = useFormStatus();
+  return (
+    <Button
+      type="submit"
+      variant="primary"
+      size="lg"
+      isLoading={pending}
+      disabled={pending}
+      className="w-full sm:w-auto"
+    >
+      {pending ? "Sending…" : "Submit Inquiry"}
+    </Button>
+  );
+}
+
 export function ContactForm() {
-  const [state, formAction, isPending] = useActionState(
+  const [state, formAction] = useFormState(
     submitContactForm,
     initialState,
   );
@@ -222,16 +238,7 @@ export function ContactForm() {
       />
 
       {/* Submit */}
-      <Button
-        type="submit"
-        variant="primary"
-        size="lg"
-        isLoading={isPending}
-        disabled={isPending}
-        className="w-full sm:w-auto"
-      >
-        {isPending ? "Sending…" : "Submit Inquiry"}
-      </Button>
+      <SubmitButton />
 
       <p className="text-xs text-body/50">
         Required fields are marked with an asterisk (*).
